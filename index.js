@@ -3,7 +3,7 @@ function priceCheck(price) {
     document.getElementById("result").innerHTML = "match";
   }
   if (price != 1.00) {
-    document.getElementById("result").innerHTML = "not a match";
+    document.getElementById("result").innerHTML += "not a match";
   }
 }
 function strictPriceCheck(price) {
@@ -16,5 +16,6 @@ should not return match when 1.00 is passed in as an argument to priceCheck
 should create a function named strictPriceCheck that takes a price and returns the string match only if the price is a number that is strictly equivalent to 1.50
 should not return match when the string 1.50 is passed in as an argument to strictPriceCheck
 should not return match when 1.00 is passed in as an argument to strictPriceCheck
+
 
 
